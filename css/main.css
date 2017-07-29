@@ -269,6 +269,7 @@ h2 ~ p {
   box-sizing: border-box;
   height: 90vh;
 }
+
 .full-hero:after {
   bottom: 2vh;
   border: 10px solid;

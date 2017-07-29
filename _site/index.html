@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+	<!-- Needed for chrome responsive -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
@@ -19,6 +22,8 @@ $(document).ready(function(){
 
       // Store hash
       var hash = this.hash;
+
+      var scroll_speed = ( 1000/$(window).height() ) * 1000;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -40,8 +45,9 @@ $(document).ready(function(){
     <ul class="header-nav nav-links">
   		<li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
 <li><a href="#test" id="nav2">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -99,6 +105,34 @@ $(document).ready(function(){
         allows web pages to be styled. Other related tutorials can be found at
         <a href="https://learnenough.com/">learnenough.com</a>.
       </p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <h4>Most recent post</h4>
+    <div class="blog-posts">
+      <header class="post-header">
+        <h2>
+          <a href="/2017/07/29/title-of-third-post.html">
+          flagUpmail 4 you</a>
+        </h2>
+        <div class="post-byline">
+          <img src="https://secure.gravatar.com/avatar/6d89fb3770a2df2418aeb5834570a9af?s=150">
+          <a href="http://twitter.com/abebrahamgo"
+          class="social-link">Tw</a>
+          by: Abraham Z. Juanes
+          <span> - July 29, 2017</span>
+        </div>
+      </header>
+      <div class="posts-image"
+      style="background-image:url(/images/shark.jpg)"></div>
+      <p>Call me <em>Ishmael</em>. Some years ago–<em>never mind how long
+precisely</em>–having little or no money in my purse, and nothing
+particular to interest me on shore, I thought I would sail about a little
+and see the watery part of the world. It is a way I have of driving off
+the spleen and regulating the circulation.</p>
+
+
     </div>
   </div>
 
@@ -197,8 +231,9 @@ $(document).ready(function(){
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
 <li><a href="#test" id="nav2">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
     </ul>
   </nav>
   <h3>Learn Enough <span>to Be Dangerous</span></h3>

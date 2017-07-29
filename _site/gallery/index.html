@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+	<!-- Needed for chrome responsive -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
@@ -19,6 +22,8 @@ $(document).ready(function(){
 
       // Store hash
       var hash = this.hash;
+
+      var scroll_speed = ( 1000/$(window).height() ) * 1000;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -40,8 +45,9 @@ $(document).ready(function(){
     <ul class="header-nav nav-links">
   		<li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
 <li><a href="#test" id="nav2">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
@@ -58,7 +64,7 @@ $(document).ready(function(){
       <img src="/images/small/slide1.jpg" alt="Image title 1">
     </div>
     <div>
-      <img src="/images/small/slide1.jpg" alt="Image title 2">
+      <img src="/images/kitten.jpg" alt="Image title 2">
     </div>
   </div>
   <div class="col col-content">
@@ -89,8 +95,9 @@ $(document).ready(function(){
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
 <li><a href="#test" id="nav2">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
     </ul>
   </nav>
   <h3>Learn Enough <span>to Be Dangerous</span></h3>

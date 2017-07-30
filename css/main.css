@@ -2,6 +2,8 @@
 html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
+  font-family: 'Open Sans', helvetica, arial, sans;
+
 }
 body {
   display: flex;
@@ -36,6 +38,10 @@ h2 ~ p {
   margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
 }
 
 /* HEADER STYLES */
@@ -500,6 +506,7 @@ h2 ~ p {
   margin: -40px 0 1em;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 .bio-box img {
   width: 100%;
@@ -576,9 +583,6 @@ h2 ~ p {
   .header-nav > li ~ li {
     padding-left: 0.25em;
   }
-  .nav-links a {
-    font-size: 3.25vw;
-  }
   .header-logo {
     left: auto;
   }
@@ -630,7 +634,7 @@ h2 ~ p {
   .blog-previews {
     padding: 0;
   }
- /* MOBILE MENU */
+  /* MOBILE MENU */
   .show-mobile-menu {
     display: block;
     float: right;
@@ -680,6 +684,9 @@ h2 ~ p {
   }
   .header-nav .drop-menu:after,
   .header-nav .drop-trigger:after {
+    display: none;
+  }
+  .dropdown:hover .drop-menu {
     display: none;
   }
 }

@@ -671,7 +671,8 @@ h1,h2,h3,h4,h5,h6 {
   }
   .header-nav li {
     display: block;
-    margin-top: 1em;
+    padding: 5px 0;
+    margin: 5% auto;
   }
   .header-nav li:last-child {
     margin-bottom: 1em;
@@ -700,4 +701,15 @@ h1,h2,h3,h4,h5,h6 {
     float: none;
     margin: 0px auto;
   }
+}
+
+/* Playing around */
+#test h2 {
+  text-align: center;
+}
+#test p {
+  text-align: justify;
+}
+#test {
+  margin: 0 auto 10vh;
 }

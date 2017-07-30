@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<!-- Needed for chrome responsive -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -42,20 +41,31 @@ $(document).ready(function(){
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
-  		<li><a href="/">Home</a></li>
+      <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <span class="drop-trigger">Blog</span>
+  <ul class="drop-menu">
+  	<li>Recent Posts</li>
+    
+      <li><a href="/2017/07/29/title-of-third-post.html">flagUpmail 4 you</a></li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
-<li><a href="#test" id="nav2">Nav 2</a></li>
     </ul>
   </nav>
   <a href="/" class="header-logo">
     <img src="/images/logo.png" alt="Learn Enough">
   </a>
 </header>
-
-<!--  -->
 
     <div class="content-container">
     	<div class="home">
@@ -64,13 +74,19 @@ $(document).ready(function(){
       <h1>CODE DANGEROUSLY</h1>
       <ul class="social-list">
         <li>
-          <a href="http://facebook.com/j.abebraham" class="social-link">Fb</a>
+          <a href="https://facebook.com/j.abraham" class="social-link">
+            <i class="fa fa-facebook"></i>
+          </a>
         </li>
         <li>
-          <a href="http://twitter.com/abebrahamgo" class="social-link">Tw</a>
+          <a href="https://twitter.com/abebrahamgo" class="social-link">
+            <i class="fa fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="http://github.com/abebraham" class="social-link">Gh</a>
+          <a href="https://github.com/abebraham" class="social-link">
+            <i class="fa fa-github"></i>
+          </a>
         </li>
       </ul>
     </div>
@@ -203,23 +219,23 @@ the spleen and regulating the circulation.</p>
     </div>
   </div>
   <div id="test">
-  <h2>Testing</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-  </p>
-</div>
+    <h2>Testing</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+    </p>
+  </div>
 </div>
     </div>
 
@@ -231,9 +247,20 @@ the spleen and regulating the circulation.</p>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <span class="drop-trigger">Blog</span>
+  <ul class="drop-menu">
+  	<li>Recent Posts</li>
+    
+      <li><a href="/2017/07/29/title-of-third-post.html">flagUpmail 4 you</a></li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2017/07/29/title-of-third-post.html">Newest Post</a></li>
-<li><a href="#test" id="nav2">Nav 2</a></li>
     </ul>
   </nav>
   <h3>Learn Enough <span>to Be Dangerous</span></h3>
